@@ -7,7 +7,7 @@
         "type": "equalEarth"
     },
     "data": {
-        "url": "https://raw.githubusercontent.com/qwan0066/fit3179-assignment2/main/ne_110m_admin_0_countries.topojson",
+        "url": "https://raw.githubusercontent.com/qwan0066/fit3179-assignment2/main/js/ne_110m_admin_0_countries.topojson",
         "format": {
             "type": "topojson",
             "feature": "ne_110m_admin_0_countries"
@@ -18,7 +18,7 @@
             "lookup": "properties.NAME",
             "from": {
                 "data": {
-                    "url": "https://raw.githubusercontent.com/qwan0066/fit3179-assignment2/main/country_wise_latest.csv"
+                    "url": "https://raw.githubusercontent.com/qwan0066/fit3179-assignment2/main/data/country_wise_latest.csv"
                 },
                 "key": "Country",
                 "fields": [
