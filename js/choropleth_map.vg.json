@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Latest Country Level Number of Death Cases for COVID-19",
+    "title": "Latest Country Level Number of Cases for COVID-19",
     "width": 800,
     "height": 400,
     "projection": {
@@ -22,13 +22,13 @@
                 },
                 "key": "Country",
                 "fields": [
-                    "Deaths"
+                    "Active"
                 ]
             }
         },
         {
-            "calculate": "datum.Deaths + 0.1",
-            "as": "Death Cases"
+            "calculate": "datum.Active + 0.1",
+            "as": "Active Cases"
         }
     ],
     "mark": {
@@ -36,7 +36,7 @@
     },
     "encoding": {
         "color": {
-            "field": "Death Cases",
+            "field": "Active Cases",
             "type": "quantitative",
             "scale": {
                 "type": "log"
@@ -49,7 +49,7 @@
                 "title": "Country"
             },
             {
-                "field": "Deaths",
+                "field": "Active",
                 "type": "quantitative"
             }
         ]
